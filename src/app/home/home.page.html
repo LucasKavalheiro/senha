@@ -12,6 +12,7 @@
     <ion-input [(ngModel)]="senha" (keyup)="verificar()"></ion-input>
   </ion-item>
 
-  <h1>Sua senha é {{forca[nivel]}}</h1>
+  <progress value="{{nivel}}" max="4" class="progresso"></progress>
+  <h1>{{forca[nivel]}}</h1>
   <img src="../../assets/{{nivel}}.png" alt="">
 </ion-content>
